@@ -20,7 +20,7 @@ void mostrarPortada() {
   | |_| | (_| | || (_| | |_) | (_) \__ \  __/ |   \ V /| | (_) | | | |
   |____/ \__,_|\__\__,_|____/ \___/|___/\___|_|    \_/ |_|\___/|_| |_|
 
-         BOT DE GENERACIÓN Y ENVÍO DE REPORTES FINANCIEROS
+         BOT DE GENERACION Y ENVÍO DE REPORTES FINANCIEROS
 =====================================================================
 )";
     this_thread::sleep_for(chrono::seconds(2));
@@ -28,17 +28,17 @@ void mostrarPortada() {
 
 void mostrarMenu() {
     cout << R"(
----------------------- MENÚ PRINCIPAL ----------------------
+---------------------- MENU PRINCIPAL ----------------------
 
 1. Generar reporte financiero mensual
 2. Generar reporte financiero anual
-3. Enviar reporte por correo electrónico
-4. Configuración del sistema
-5. Créditos
+3. Enviar reporte por correo electronico
+4. Configuracion del sistema
+5. Creditos
 0. Salir
 
 -------------------------------------------------------------
-Ingrese una opción: )";
+Ingrese una opcion: )";
 }
 
 int main() {
@@ -52,9 +52,9 @@ int main() {
 
         // Validación simple (sin funcionalidad, como pediste)
         if (opcion < 0 || opcion > 5) {
-            cout << "Opción inválida. Intente nuevamente.\n";
+            cout << "Opcion invalida. Intente nuevamente.\n";
         } else if (opcion != 0) {
-            cout << "\nFuncionalidad aún no implementada. Presione Enter para continuar...\n";
+            cout << "\nFuncionalidad aun no implementada. Presione Enter para continuar...\n";
             cin.ignore(); // limpiar buffer
             cin.get();    // esperar Enter
             system(CLEAR);
